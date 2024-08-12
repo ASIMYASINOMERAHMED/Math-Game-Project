@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FEF4F45E-A9FB-453A-9E18-346FA02C8642}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Math_Game_Project</RootNamespace>
+    <AssemblyName>Math Game Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\lap2p\Desktop\Math Game Project\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>417102E36B1408B76B67B77AD96E9D2515FD3E00</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Math Game Project_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClassRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClassRoom.Designer.cs">
+      <DependentUpon>frmClassRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClassRoom.resx">
+      <DependentUpon>frmClassRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Math Game Project_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\All_Math_Formula_Picture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1025182652-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher-and-students-classroom-scene-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\be2d6add96c45ee034736d319c589caf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d5709e2f8a4e373f73c2eae987ebbfc6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boy point.png" />
+    <None Include="Resources\boy_x-removebg-preview %281%29 %281%29.png" />
+    <None Include="Resources\boytumpup.jpg" />
+    <None Include="Resources\boytumpup-removebg-preview.png" />
+    <None Include="Resources\boy point_resized.png" />
+    <None Include="Resources\boyr2.png" />
+    <None Include="Resources\boy point_resized1.png" />
+    <None Include="Resources\boyx %281%29 %281%29.png" />
+    <None Include="Resources\boyx %281%29 %282%29.png" />
+    <None Include="Resources\boy point1.png" />
+    <None Include="Resources\boy_x-removebg-preview %281%29 %281%291.png" />
+    <None Include="Resources\boyXfinal.png" />
+    <None Include="Resources\boyr %281%29.png" />
+    <None Include="Resources\boyx %281%29.png" />
+    <Content Include="Resources\clock-ticking-3.wav" />
+    <Content Include="Resources\Clock_Tick.wav" />
+    <None Include="Resources\Close 64.png" />
+    <Content Include="Resources\Correct.wav" />
+    <None Include="Resources\d5709e2f8a4e373f73c2eae987ebbfc6_resized_resized_resized.jpg" />
+    <None Include="Resources\d5709e2f8a4e373f73c2eae987ebbfc6_resized_resized.jpg" />
+    <None Include="Resources\d5709e2f8a4e373f73c2eae987ebbfc6_resized.jpg" />
+    <None Include="Resources\wood.jfif" />
+    <None Include="Resources\d5709e2f8a4e373f73c2eae987ebbfc6_resized_resized_resized_resized.jpg" />
+    <None Include="Resources\d5709e2f8a4e373f73c2eae987ebbfc6_resized_resized_resized_resized_resized.jpg" />
+    <None Include="Resources\purepng.com-men-pointing-leftmanpeoplepersonsmalegesturespointing-left-1121525121648xz4oj.png" />
+    <None Include="Resources\purepng.com-men-pointing-leftmanpeoplepersonsmalegesturespointing-left-1121525121648xz4oj1.png" />
+    <None Include="Resources\purepng.com-men-pointing-leftmanpeoplepersonsmalegesturespointing-left-1121525121648xz4oj2.png" />
+    <None Include="Resources\finance-clipart-trade-surplus-8.png" />
+    <None Include="Resources\fingerdown.png" />
+    <None Include="Resources\happyboy.png" />
+    <None Include="Resources\happyboy1.png" />
+    <None Include="Resources\Thumpdown-removebg-preview %281%29.png" />
+    <None Include="Resources\R.png" />
+    <None Include="Resources\R1.png" />
+    <None Include="Resources\right_boy.png" />
+    <Content Include="Resources\Wall_Clock.wav" />
+    <None Include="Resources\wood1.jfif" />
+    <None Include="Resources\wood2.jfif" />
+    <Content Include="Resources\Wrong.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
